@@ -876,3 +876,483 @@ Output 2 :
 -15.70 + 58.80i
 6.54
 9.30
+
+
+
+Question 16:
+
+
+Problem Statement
+
+
+
+Write a program to create a structure DEP_STORE and declare the variables as store_name,  store_address, phone_no. Create another structure STORE_ITEM and declare the variables as item_number, item_name, available_qty, item_price. 
+
+
+
+Generate a report to display the Store Name, Store Address, and Phone number with the item name and its price. Calculate the total item value present in the store. Refer to the example below:
+
+
+
+
+
+Input format :
+The first line of input consists of a string, representing the store name.
+
+The second line consists of a string, representing the store address.
+
+The third line consists of a string, representing the phone number.
+
+The fourth line consists of an integer N, representing the number of items.
+
+For each item, the input consists of the following:
+
+An integer, representing the item number.
+A string, representing the item name.
+An integer, representing the quantity.
+A float value, representing the price per item.
+Output format :
+The first line prints "Store Name: " followed by the store name.
+
+The second line prints "Store Address: " followed by the store address.
+
+The third line prints "Phone Number: " followed by the phone number.
+
+
+
+After a new line, the next line prints "Item Number" followed by a tab space, "Item Name" followed by a tab space, "Available Quantity" followed by a tab space, "Item Price".
+
+In each of the following N lines, the output prints the item number, item name, available quantity, and the item price(a float value rounded to two decimal places) of N items, separated by a tab space.
+
+
+
+After a new line, the next line prints "Total Item Value: Rs. " followed by a float value rounded to two decimal places representing the total item value.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ N ≤ 10
+
+2 ≤ Length of customer name < 50
+
+2 ≤ Length of address < 100
+
+2 ≤ Length of phone number < 15
+
+2 ≤ Length of item name < 50
+
+Sample test cases :
+Input 1 :
+ABC Mart
+Chennai
+7412589635
+2
+101
+Shoes 
+5
+500.00
+102 
+Shirts 
+3 
+300.50
+Output 1 :
+Store Name: ABC Mart
+Store Address: Chennai
+Phone Number: 7412589635
+
+Item Number	Item Name	Available Quantity	Item Price
+101		Shoes 		5		500.00
+102		Shirts 		3		300.50
+
+Total Item Value: Rs. 3401.50
+Input 2 :
+Rams Retail
+Coimbatore
+9874563214
+4
+190
+TNPL A4 sheet Bundle
+10
+170
+345
+Hand Gloves
+20
+20
+234
+Milton Flask 
+13
+305
+564
+Pencil Box
+20
+55
+Output 2 :
+Store Name: Rams Retail
+Store Address: Coimbatore
+Phone Number: 9874563214
+
+Item Number	Item Name	Available Quantity	Item Price
+190		TNPL A4 sheet Bundle		10		170.00
+345		Hand Gloves		20		20.00
+234		Milton Flask 		13		305.00
+564		Pencil Box		20		55.00
+
+Total Item Value: Rs. 7165.00
+
+
+Question 17:
+
+Problem Statement
+
+
+
+Ezhil wants to create a program to add N distances given in the inch-feet system using typedef in a structure. He needs to develop a program that allows the user to input N distances, each consisting of inches and feet ensuring that if the inch sum is greater than or equal to 12 it is appropriately converted to feet and then calculate the total sum of these distances.
+
+
+
+Can you help Ezhil by developing the required program to fulfill these requirements?
+
+
+
+Example
+
+
+
+Input:
+
+3
+
+10 3.7
+
+10 5.5
+
+6 8.0
+
+
+
+Output:
+
+27
+
+5.20
+
+
+
+Explanation:
+
+The sum of the feet is 10+10+6 = 26
+
+The sum of the inch is 3.7+5.5+8.0 = 17.2
+
+
+
+1 feet = 12 inches.
+
+17.2 is greater than 12.
+
+So 17.2 - 12 = 5.2.
+
+The result is 27 feet and 5.20 inches.
+
+Input format :
+The first line of input contains an integer N, representing the number of distances.
+
+The next N lines each contain two space-separated values: the feet value and the inch value of each distance, separated by space.
+
+
+
+Note:
+
+feet - integer
+
+inch - float
+
+Output format :
+The first line of output displays the sum of the feet values as an integer.
+
+The second line of output displays the sum of the inch values, rounded to two decimal places, as a float value.
+
+
+
+Refer to the sample output for formatting specifications.﻿
+
+Sample test cases :
+Input 1 :
+3
+10 3.7
+10 5.5
+6 8.0
+Output 1 :
+27
+5.20
+Input 2 :
+2
+5 6.8
+2 10.2
+Output 2 :
+8
+5.00
+Input 3 :
+3
+1 1.7 
+1 1.5 
+6 8.0
+Output 3 :
+8
+11.20
+
+
+Question 18:
+
+Problem Statement
+
+
+
+Ashok, an aspiring architect, needs a program to calculate volumes of geometric shapes. 
+
+
+
+He wants to define structures Point3D, Sphere, Cylinder, and GeometryCalculator. Help him accept input for the details of the sphere and cylinder. Display their volumes with two decimal places.
+
+
+
+Structure Details:
+
+Point3D: Represents a point in 3D space with coordinates (x, y, z).
+
+Sphere: Describes a sphere with a centre of type Point3D and a radius.
+
+Cylinder: Defines a cylinder with a base centre (Point3D), radius, and height.
+
+GeometryCalculator: Combines a Sphere and a Cylinder for calculations.
+
+
+
+Formulae:
+
+Sphere Volume = (4/3) x 3.14 x r3
+
+Cylinder Volume = 3.14 x R2 x h
+
+Input format :
+The first line of input consists of three space-separated double values x, y, and z, representing the sphere center.
+
+The second line consists of a double value r, representing the sphere Radius.
+
+The third line consists of three space-separated double values X, Y, and Z, representing the cylinder base center.
+
+The fourth line consists of two space-separated double values R, H, representing the cylinder radius and cylinder height.
+
+Output format :
+The first line prints a double value in the following format: "Sphere's Volume: [Volume rounded to two decimal places] cubic units".
+
+The second line prints a double value in the following format: "Cylinder's Volume: [Volume rounded to two decimal places] cubic units".
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+1.0 ≤ x, y, z, r ≤ 100.0
+
+1.0 ≤ X, Y, Z, R, H ≤ 100.0
+
+Sample test cases :
+Input 1 :
+12.1 18.7 21.8
+7.1
+18.1 15.5 13.4
+41.1 13.2
+Output 1 :
+Sphere's Volume: 1498.45 cubic units
+Cylinder's Volume: 70014.38 cubic units
+Input 2 :
+1.2 3.4 5.6
+1.5
+1.6 2.4 5.6
+3.2 6.7
+Output 2 :
+Sphere's Volume: 14.13 cubic units
+Cylinder's Volume: 215.43 cubic units
+
+
+Question 19:
+
+
+Problem Statement
+
+
+
+Bakya works as a medical records assistant in a small clinic. She is tasked with managing and analyzing patient data, specifically focusing on the gender distribution and age of patients. Each patient record includes an ID, name, gender (1 for male and 0 for female), and age. Bakya's job is to count the number of male and female patients and identify if there are any patients older than 40. If patients older than 40 exist, she must list their names; otherwise, she will return '0'. 
+
+
+
+Help Bakya by creating a system that processes this patient data using the struct patient and two functions: print_gender() to count males and females, and print_age() to display names of patients above 40 years old.
+
+Input format :
+The first line consists of an integer n, representing the number of patients.
+
+In each of the following n lines, the input consists of four space-separated values:
+
+An integer - Patient's ID
+A string (without spaces) - Patient's name
+An integer - Patient's gender(1- Male, 2- Female)
+An integer - Patient's age
+Output format :
+The first line prints "Count: " followed by two space-separated integers representing the number of males and females in the patient data.
+
+The second line prints "Above 40: " followed by the names of patients whose age is greater than 40 separated by a space.
+
+
+
+Refer to the sample output for the formatting specifications. 
+
+Code constraints :
+1 ≤ n ≤ 10
+
+Length of the name ≤ 30
+
+The name should not contain any spaces.
+
+There is at least one patient over the age of 40.
+
+Sample test cases :
+Input 1 :
+5
+100 Gokul 1 40
+101 Ashok 1 35
+231 Banu 2 45 
+211 Akaash 1 60
+109 Chiranjeevi 1 44
+Output 1 :
+Count: 4 1
+Above 40: Banu Akaash Chiranjeevi 
+Input 2 :
+2
+100 Shyam 1 23
+101 Jeeva 1 25
+Output 2 :
+Count: 2 0
+Above 40: 0
+
+
+Question 20:
+
+
+Problem Statement
+
+
+
+Amanpreet Singh, the school headmaster, wants to create a program to manage student information using structures and pointers. He needs your help in completing the program. He wants to store information about students using a structure and pointers.
+
+
+
+The program should handle various tasks such as identifying students of a specific age as exactly 17, finding students with even roll numbers, and retrieving details for a specific roll number. 
+
+
+
+Note: It is assumed that at least one student is of age 17, at least one student has an even roll number and the roll number to be searched is present in the list.
+
+Input format :
+The first line of input consists of an integer n, representing the number of students.
+
+The next n lines of input consist of the student's roll number as an integer, name as a string without spaces, age as an integer, and address as a string without spaces, separated by a space.
+
+The last line of input consists of an integer, representing the roll number to be searched.
+
+Output format :
+The first line of output prints the names of all the students of the age of 17, separated by a space.
+
+The second line of output prints the names of all the students with even roll numbers, separated by space.
+
+The third line of output prints the details (roll number, name, age, and address) of the student separated by a space whose roll number is given.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+In this scenario, the test cases will fall under the following constraints:
+
+2 ≤ n ≤ 10
+
+Length of the student's name ≤ 25
+
+Length of the address ≤ 25
+
+Sample test cases :
+Input 1 :
+5
+1 Alice 17 Coimbatore
+2 Ram 15 Chennai
+3 Pooja 25 Karur
+4 Devi 26 Erode
+5 Bava 17 Salem
+4
+Output 1 :
+Alice Bava 
+Ram Devi 
+4 Devi 26 Erode
+Input 2 :
+2
+1 Shine 17 Bangalore
+4 Bob 15 Mumbai
+1
+Output 2 :
+Shine 
+Bob 
+1 Shine 17 Bangalore
+
+
+Question 21:
+
+
+Problem Statement
+
+
+
+Caroline loves exploring the world of complex numbers and needs your help to perform addition operations. She wants to use a union named ComplexNumber to represent complex numbers with real and imaginary parts.
+
+
+
+Write a program to help Caroline perform complex number addition.
+
+Input format :
+The first line of input consists of two space-separated double values, representing the real and imaginary parts of the first complex number.
+
+The second line consists of two space-separated double values, representing the real and imaginary parts of the second complex number.
+
+Output format :
+The output prints the sum of the complex numbers, rounded off to two decimal places.
+
+
+
+Refer to the sample outputs for formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+-150.0 ≤ first complex number ≤ 150.0
+
+-150.0 ≤ second complex number ≤ 150.0
+
+Sample test cases :
+Input 1 :
+4.0 5.0
+3.0 5.0
+Output 1 :
+7.00 + 10.00i
+Input 2 :
+-2.5 3.0
+1.5 -2.0
+Output 2 :
+-1.00 + 1.00i
+Input 3 :
+125.0 35.0
+75.0 150.0
+Output 3 :
+200.00 + 185.00i
