@@ -684,3 +684,195 @@ Input 3 :
 1 0 1 0 1
 Output 3 :
 -100 200 -120 345 -667 
+
+
+Question 13
+
+Problem Statement
+
+
+
+Harsh is a city planner who is tasked with predicting the population growth of his city over the next few years. He wants to create a program to predict the future population based on the initial population, growth rate, and time.
+
+
+
+Assist Harsh in completing his task using pointers and the function Growth() to find the growth rate.
+
+
+
+Formula: Predicted population = initial population * e growth rate * time
+
+Input format :
+The first line of input consists of a double value N, representing the initial population of the city.
+
+The second line consists of a double value M, representing the growth rate of the city.
+
+The third line consists of a double value T, representing the time (in years).
+
+Output format :
+The output prints a double value, representing the predicted population, rounded off to two decimal places.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+1000.0 ≤ N ≤ 100000.0
+
+0.01 ≤ M ≤ 1.0
+
+1.0 ≤ T ≤ 5.0
+
+Sample test cases :
+Input 1 :
+1000.0
+0.05
+5.0
+Output 1 :
+1284.03
+Input 2 :
+7057.0
+0.01
+3.5
+Output 2 :
+7308.37
+Input 3 :
+100578.0
+1.00
+2.8
+Output 3 :
+1653969.68
+
+Question 14
+
+
+﻿Create a structure called cricketer that stores the cricketer's information such as name, age, number of matches, and average runs as attributes. 
+
+
+
+Write a program that takes N cricketers in a structured array and displays the information in ascending order based on average runs scored by each person.
+
+Input format :
+The first line of input consists of an integer N, representing the number of cricketers.
+
+In each of the following N lines, the input consists of four space-separated values:
+
+A string (without spaces) - Cricketer's name
+An integer - Cricketer's age
+An integer - Cricketer's number of matches
+A float value - Cricketer's average runs
+Output format :
+The output displays the information in ascending order based on the average runs scored by each person.
+
+
+
+Each line consists of four space-separated values:
+
+A string (without spaces) - Cricketer's name
+An integer - Cricketer's age
+An integer - Cricketer's number of matches
+A float value - Cricketer's average runs rounded to two decimal places
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+1 ≤ N ≤ 30
+
+length of the name ≤ 50
+
+Sample test cases :
+Input 1 :
+2
+Rahul 32 22 1234.58
+David 42 55 256.8
+Output 1 :
+David 42 55 256.80
+Rahul 32 22 1234.58
+Input 2 :
+5
+Shakib 34 206 36.51
+Martin 35 186 43.87
+Kane 31 151 53.97
+Babar 26 88 55.94
+Quinton 29 125 45.62
+Output 2 :
+Shakib 34 206 36.51
+Martin 35 186 43.87
+Quinton 29 125 45.62
+Kane 31 151 53.97
+Babar 26 88 55.94
+
+
+Question 15
+
+
+Problem Statement
+
+
+
+Develop a program using a typedef for a complex number structure. The program should take two sets of real and imaginary parts as input and perform the following operations:
+
+
+
+Addition of 2 complex numbers
+Subtraction of 2 complex numbers
+Multiplication of 2 complex numbers
+Modulus of a given complex numbers
+
+
+Display the results of each operation.
+
+
+
+Formulas for reference:
+
+Addition of Complex Numbers: (a + bi) + (c + di) = (a + c) + (b + d)i 
+Subtraction of Complex Numbers: (a + bi) - (c + di) = (a - c) + (b - d)i 
+Multiplication of Complex Numbers: (a + bi) * (c + di) = (ac - bd) + (ad + bc)i
+Modulus (Magnitude) of a Complex Number (a + bi) = √a2 + b2
+Input format :
+The first line consists of two space-separated float values representing the real and imaginary parts of the first complex number.
+
+The second line consists of two space-separated float values representing the real and imaginary parts of the second complex number.
+
+Output format :
+The first line prints the addition of the two complex numbers in the format: a + bi
+
+The second line prints the subtraction of the two complex numbers in the format: a + bi
+
+The third line prints the multiplication of the two complex numbers in the format: a + bi
+
+The fourth line prints a float value representing the modulus of the first complex number.
+
+The fifth line prints a float value representing the modulus of the second complex number.
+
+
+
+Note: Here a and b values are float values rounded to two decimal places.
+
+
+
+Refer to the sample outputs for the formatting specifications.
+
+Sample test cases :
+Input 1 :
+2.0 2.0
+2.1 2.1
+Output 1 :
+4.10 + 4.10i
+-0.10 + -0.10i
+0.00 + 8.40i
+2.83
+2.97
+Input 2 :
+4.1 5.1
+5.5 7.5
+Output 2 :
+9.60 + 12.60i
+-1.40 + -2.40i
+-15.70 + 58.80i
+6.54
+9.30
