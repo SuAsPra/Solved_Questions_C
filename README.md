@@ -1,5 +1,7 @@
 # Solved_Questions_C
 Questions solved on C language
+
+
 Question 1
 Find the logic behind the given series
 
